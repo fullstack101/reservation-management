@@ -1,0 +1,19 @@
+{
+  "name": "reservation-management",
+  "version": "1.0.0",
+  "description": "Team3 - Web app for reserving rooms.",
+  "scripts": {
+   "start": "node server/server.js",
+   "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fullstack101/reservation-management.git"
+  },
+  "author": "team3",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fullstack101/reservation-management/issues"
+  },
+  "homepage": "https://github.com/fullstack101/reservation-management#readme"
+}
