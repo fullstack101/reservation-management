@@ -1,8 +1,11 @@
-#!/usr/bin/env nodejs
-var http = require('http');
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('Hello from team3\n');
-}).listen(8080, 'localhost');
+const express = require('express');
+const app = express();
 
-console.log('Server running at http://localhost:8080/');
+const fs = require('fs');
+const indexHTML = fs.readFileSync('./client/index.html');
+
+app.get('/', (req, res) => {
+    res.end(indexHTML);
+});
+
+app.listen(8080);
