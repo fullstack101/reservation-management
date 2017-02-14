@@ -3,24 +3,31 @@
   "version": "1.0.0",
   "description": "Team3 - Web app for reserving rooms.",
   "scripts": {
-    "start": "node server/server.js",
-    "test": "mocha"
+    "style": "node ./node_modules/eslint/bin/eslint */*.js",
+    "build": "node ./node_modules/gulp/bin/gulp.js",
+    "test": "node ./node_modules/mocha/bin/mocha",
+    "start": "node server/server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fullstack101/reservation-management.git"
   },
   "dependencies": {
-    "express": "*",
-    "mocha": "*",
-    "chai": "*",
-    "eslint": "*",
-    "mongodb": "*"
+    "mongodb": "^2.2.24",
+    "express": "^4.14.1"
   },
   "author": "team3",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/fullstack101/reservation-management/issues"
   },
-  "homepage": "https://github.com/fullstack101/reservation-management#readme"
+  "homepage": "https://github.com/fullstack101/reservation-management#readme",
+  "devDependencies": {
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.9.0",
+    "mocha": "^3.2.0"
+  }
 }
