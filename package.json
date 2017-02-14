@@ -12,7 +12,10 @@
   },
   "dependencies": {
     "express": "*",
-    "mongodb": "^2.2.23"
+    "mocha": "*",
+    "chai": "*",
+    "eslint": "*",
+    "mongodb": "*"
   },
   "author": "team3",
   "license": "ISC",
