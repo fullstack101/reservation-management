@@ -27,7 +27,7 @@ Starting the server:
     npm start   
 
 Adding dependencies(updates package.json file):  
-    npm install --save <name_of_a_package_we_need>   
+    npm install --save name_of_a_package_we_need   
 
 Adding dev-dependencies(updates package.json file):  
-    npm install --dev-save <name_of_a_package_we_need>    
+    npm install --dev-save name_of_a_package_we_need    
