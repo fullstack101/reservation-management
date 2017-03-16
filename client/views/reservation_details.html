@@ -1,0 +1,20 @@
+<a href="#!/reservations">Go Back</a>
+<div class="panel panel-default" ng-init="getReservations()">
+  <div class="panel-heading">
+    <h3 class="panel-title">Reservation Information</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+        <div class="col-md-4">
+        <ul class="list-group">
+            <li class="list-group-item">Name: {{reservation.name}}</li>
+            <li class="list-group-item">Student ID: {{reservation.st_id}}</li>
+            <li class="list-group-item">Room: {{reservation.room}}</li>
+            <li class="list-group-item">Timeslot: {{reservation.timeslot}}</li>
+            <li class="list-group-item">Details: {{reservation.details}}</li>
+        </ul>
+        </div>
+        
+    </div>
+  </div>
+</div>

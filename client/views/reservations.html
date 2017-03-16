@@ -1,0 +1,23 @@
+<div class="panel panel-default" ng-init="getReservations()" ng-init="getReservation()">
+  <div class="panel-heading">
+    <h3 class="panel-title">Reservations</h3>
+  </div>
+  <div class="panel-body">
+    <div ng-repeat="reservation in reservations">
+        <div class="col-md-4">
+            <div class="col-md-8">
+                <p>{{reservation.name}}</p>
+                <p>{{reservation.room}}</p>
+                <p>{{reservation.timeslot}}</p>
+                <div class="pull-left">
+                <a ui-sref-active="active" ui-sref="reservation/edit/{{reservation._id}}">Edit</a> | <a href="#!" ng-click="deleteReservation(reservation._id)">Delete</a>
+                </div>
+                <div class="pull-right">
+                  <a ng-href="#!/reservation/details{{ reservation._id }}/" target="_self">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+

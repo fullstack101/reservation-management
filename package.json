@@ -13,8 +13,11 @@
     "url": "git+https://github.com/fullstack101/reservation-management.git"
   },
   "dependencies": {
+    "body-parser": "^1.17.1",
+    "bower": "^1.8.0",
+    "express": "^4.14.1",
     "mongodb": "^2.2.24",
-    "express": "^4.14.1"
+    "mongoose": "^4.9.0"
   },
   "author": "team3",
   "license": "ISC",
@@ -25,6 +28,8 @@
   "devDependencies": {
     "eslint": "^3.15.0",
     "eslint-config-airbnb": "^14.1.0",
+    "eslint-config-angular": "^0.5.0",
+    "eslint-plugin-angular": "^1.6.2",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.9.0",
